@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 个人-->
+<data>
+	<!-- 首次-->
+	<ver type="1" url="ver/1.png" info="输入第2到第5位图像校验码" code="5330" />
+	<ver type="1" url="ver/2.png" info="输入第2到第5位图像校验码" code="6035" />
+	<ver type="1" url="ver/3.png" info="输入第2到第5位图像校验码" code="9819" />
+	<ver type="1" url="ver/4.png" info="输入第2到第5位图像校验码" code="0266" />
+	<ver type="1" url="ver/5.png" info="输入第2到第5位图像校验码" code="4596" />
+	<ver type="1" url="ver/6.png" info="输入第2到第5位图像校验码" code="9405" />
+	<ver type="1" url="ver/7.png" info="输入第2到第5位图像校验码" code="1803" />
+	<ver type="1" url="ver/8.png" info="输入第2到第5位图像校验码" code="5663" />
+	<ver type="1" url="ver/9.png" info="输入第2到第5位图像校验码" code="7262" />
+	<ver type="1" url="ver/10.png" info="输入第2到第5位图像校验码" code="4901" />
+	<ver type="1" url="ver/11.png" info="输入前4位图像校验码" code="1793" />
+	<ver type="1" url="ver/12.png" info="输入前4位图像校验码" code="2135" />
+	<ver type="1" url="ver/13.png" info="输入前4位图像校验码" code="4194" />
+	<ver type="1" url="ver/14.png" info="输入前4位图像校验码" code="7398" />
+	<ver type="1" url="ver/15.png" info="输入前4位图像校验码" code="7226" />
+	<ver type="1" url="ver/16.png" info="输入前4位图像校验码" code="1273" />
+	<ver type="1" url="ver/17.png" info="输入前4位图像校验码" code="1091" />
+	<ver type="1" url="ver/18.png" info="输入前4位图像校验码" code="1924" />
+	<ver type="1" url="ver/19.png" info="输入前4位图像校验码" code="8736" />
+	<ver type="1" url="ver/20.png" info="输入前4位图像校验码" code="1042" />
+	<ver type="1" url="ver/21.png" info="输入后4位图像校验码" code="4648" />
+	<ver type="1" url="ver/22.png" info="输入后4位图像校验码" code="8131" />
+	<ver type="1" url="ver/23.png" info="输入后4位图像校验码" code="1043" />
+	<ver type="1" url="ver/24.png" info="输入后4位图像校验码" code="5843" />
+	<ver type="1" url="ver/25.png" info="输入后4位图像校验码" code="4739" />
+	<ver type="1" url="ver/26.png" info="输入后4位图像校验码" code="9135" />
+	<ver type="1" url="ver/27.png" info="输入后4位图像校验码" code="5640" />
+	<ver type="1" url="ver/28.png" info="输入后4位图像校验码" code="3074" />
+	<ver type="1" url="ver/29.png" info="输入后4位图像校验码" code="3762" />
+	<ver type="1" url="ver/30.png" info="输入后4位图像校验码" code="1474" />
+	<!-- 修改-->
+	<ver type="2" url="ver/31.png" info="输入数字" code="1870" />
+	<ver type="2" url="ver/32.png" info="输入数字" code="2914" />
+	<ver type="2" url="ver/33.png" info="输入数字" code="0989" />
+	<ver type="2" url="ver/34.png" info="输入数字" code="1624" />
+	<ver type="2" url="ver/35.png" info="输入数字" code="2975" />
+	<ver type="2" url="ver/36.png" info="输入数字" code="3364" />
+	<ver type="2" url="ver/37.png" info="输入数字" code="5897" />
+	<ver type="2" url="ver/38.png" info="输入数字" code="1529" />
+	<ver type="2" url="ver/39.png" info="输入数字" code="9639" />
+	<ver type="2" url="ver/40.png" info="输入数字" code="2032" />
+	<ver type="2" url="ver/41.png" info="输入画圈的数字" code="7520" />
+	<ver type="2" url="ver/42.png" info="输入画圈的数字" code="6476" />
+	<ver type="2" url="ver/43.png" info="输入画圈的数字" code="6435" />
+	<ver type="2" url="ver/44.png" info="输入画圈的数字" code="6114" />
+	<ver type="2" url="ver/45.png" info="输入画圈的数字" code="6202" />
+	<ver type="2" url="ver/46.png" info="输入画圈的数字" code="8832" />
+	<ver type="2" url="ver/47.png" info="输入画圈的数字" code="1174" />
+	<ver type="2" url="ver/48.png" info="输入画圈的数字" code="6025" />
+	<ver type="2" url="ver/49.png" info="输入画圈的数字" code="1645" />
+	<ver type="2" url="ver/50.png" info="输入画圈的数字" code="7972" />
+	<ver type="2" url="ver/51.png" info="输入绿灯行数字图像校验码" code="9096" />
+	<ver type="2" url="ver/52.png" info="输入绿灯行数字图像校验码" code="1531" />
+	<ver type="2" url="ver/53.png" info="输入绿灯行数字图像校验码" code="2868" />
+	<ver type="2" url="ver/54.png" info="输入绿灯行数字图像校验码" code="7317" />
+	<ver type="2" url="ver/55.png" info="输入绿灯行数字图像校验码" code="8316" />
+	<ver type="2" url="ver/56.png" info="输入飞机行数字图像校验码" code="6218" />
+	<ver type="2" url="ver/57.png" info="输入飞机行数字图像校验码" code="1464" />
+	<ver type="2" url="ver/58.png" info="输入飞机行数字图像校验码" code="1343" />
+	<ver type="2" url="ver/59.png" info="输入飞机行数字图像校验码" code="4845" />
+	<ver type="2" url="ver/60.png" info="输入飞机行数字图像校验码" code="1280" />
+	<!-- 查询-->
+	<ver type="3" url="ver/61.png" info="请输入4位图像校验码" code="605953" />
+	<ver type="3" url="ver/62.png" info="请输入4位图像校验码" code="826009" />
+	<ver type="3" url="ver/63.png" info="请输入4位图像校验码" code="923011" />
+	<ver type="3" url="ver/64.png" info="请输入4位图像校验码" code="931592" />
+	<ver type="3" url="ver/65.png" info="请输入4位图像校验码" code="210413" />
+	<ver type="3" url="ver/66.png" info="请输入4位图像校验码" code="179678" />
+	<ver type="3" url="ver/67.png" info="请输入4位图像校验码" code="136017" />
+	<ver type="3" url="ver/68.png" info="请输入4位图像校验码" code="212025" />
+	<ver type="3" url="ver/69.png" info="请输入4位图像校验码" code="039429" />
+	<ver type="3" url="ver/70.png" info="请输入4位图像校验码" code="035594" />
+	<ver type="3" url="ver/71.png" info="请输入4位图像校验码" code="599002" />
+	<ver type="3" url="ver/72.png" info="请输入4位图像校验码" code="559299" />
+	<ver type="3" url="ver/73.png" info="请输入4位图像校验码" code="411830" />
+	<ver type="3" url="ver/74.png" info="请输入4位图像校验码" code="184030" />
+	<ver type="3" url="ver/75.png" info="请输入4位图像校验码" code="462798" />
+	<ver type="3" url="ver/76.png" info="请输入4位图像校验码" code="937647" />
+	<ver type="3" url="ver/77.png" info="请输入4位图像校验码" code="043353" />
+	<ver type="3" url="ver/78.png" info="请输入4位图像校验码" code="904619" />
+	<ver type="3" url="ver/79.png" info="请输入4位图像校验码" code="213761" />
+	<ver type="3" url="ver/80.png" info="请输入4位图像校验码" code="184117" />
+</data> 

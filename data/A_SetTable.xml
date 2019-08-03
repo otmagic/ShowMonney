@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- 个人
+     sceneX:
+	 sceneY:
+	 phaseTime1(分钟):第一阶段时间
+	 phaseTime2(分钟):第二阶段时间
+     warningPrice:警示价
+     operationCD(秒):出价CD
+	 YZMGL(1/n):验证码加载失败概率
+	 JDTGL(1/n):进度条出现概率
+	 bidLines:投标额度
+	 bidNum:投标人数
+	 SystemTipClosingTime:系统提示关闭时间
+-->
+<data 
+sceneX="0"
+sceneY="0"
+phaseTime1="2"
+phaseTime2="2"
+warningPrice="87900"
+operationCD="5"
+YZMGL="10"
+JDTGL="10"
+bidLines="7800"
+bidNum="220000"
+SystemTipClosingTime="15"
+>
+
+</data>
