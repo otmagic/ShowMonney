@@ -4,23 +4,52 @@
 #@Author: OTMAGIC
 #@File  : db.py
 
-import pymongo
 
-myClient = pymongo.MongoClient("mongodb://10.1.1.224:27017/")
-myDB = myClient["showMoney"]
-myCol = myDB["sites"]
+from xml.etree import ElementTree as et
+import json
 
-myDict = {"name": "showMoney", "alexa": "10000", "url": "https://www.runoob.com"}
 
-mylist = [
-  { "_id": 1, "name": "RUNOOB", "cn_name": "菜鸟教程"},
-  { "_id": 2, "name": "Google", "address": "Google 搜索"},
-  { "_id": 3, "name": "Facebook", "address": "脸书"},
-  { "_id": 4, "name": "Taobao", "address": "淘宝"},
-  { "_id": 5, "name": "Zhihu", "address": "知乎"}
-]
+def readxml_et():
+  tree = et.ElementTree(file="/Volumes/work/workspace/ShowMoney/data/A_SetTable.xml")
+  root = tree.getroot()
+  A = dict()
+  listbigoption = []
+  for child_root in root:
+    if child_root.tag == 'filename':
+      imagePath = child_root.text
+    if child_root.tag == 'object':
+      listobject = dict()
+      for xylabel in child_root:
+        if xylabel.tag == 'name':
+          label = xylabel.text
+        if xylabel.tag == 'polygon':
+          listpoints = []
+          for pt in xylabel:
+            if pt.tag == 'pt':
+              listxy = []
+              for i in pt:
+                if i.tag == 'x':
+                  listxy.append(int(i.text))
+                if i.tag == 'y':
+                  listxy.append(int(i.text))
+                listpoints.append(listxy)
+          listobject['points'] = listpoints
+          listobject['line_color'] = 'null'
+          listobject['label'] = label
+          listobject['fill_color'] = 'null'
+          listbigoption.append(listobject)
+        # print(listbigoption)
+  A['lineColor'] = [0, 255, 0, 128]
+  A['imageData'] = 'imageData'
+  A['fillColor'] = [255, 0, 0, 128]
+  # A['imagePath'] = imagePath
+  A['shapes'] = listbigoption
+  A['flags'] = {}
+  with open('1.json', 'w') as f:
+    json.dump(A, f)
 
-x = myCol.insert_many(mylist)
 
-# 输出插入的所有文档对应的 _id 值
-print(x.inserted_ids)
+readxml_et()
+
+rs = readxml_et()
+print(rs)  # 输出响应的文本
