@@ -1,40 +1,37 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
+# @Notes  : 获取最新验证码数据信息
 # @Time  : 2019-07-30 00:04
 # @Author: OTMAGIC
-# @File  : apiRequest.py
+# @File  : xmlParsing.py
 
-import threading
-import time
+import json
+import xmltodict
+import pymongo
 
-exitFlag = 0
+# 定义xml转json的函数
+def xmltojson():
+    xml_file = open('/Volumes/work/pythonSpace/ShowMoney/data/A_Verification.xml', encoding='utf-8')
+    xml_str = xml_file.read()
 
-class myThread (threading.Thread):
-    def __init__(self, threadID, name, counter):
-        threading.Thread.__init__(self)
-        self.threadID = threadID
-        self.name = name
-        self.counter = counter
-    def run(self):
-        print ("开始线程：" + self.name)
-        print_time(self.name, self.counter, 5)
-        print ("退出线程：" + self.name)
+    # parse是的xml解析器e = xmlDom.parse(xmlstr)
+    xmlParse = xmltodict.parse(xml_str)
 
-def print_time(threadName, delay, counter):
-    while counter:
-        if exitFlag:
-            threadName.exit()
-        time.sleep(delay)
-        print ("%s: %s" % (threadName, time.ctime(time.time())))
-        counter -= 1
+    # json库dumps()是将dict转化成json格式，loads()是将json转化成dict格式。
+    # dumps()方法的ident=1，格式化json
+    jsonStr = json.dumps(xmlParse).replace('@', '')
 
-# 创建新线程
-thread1 = myThread(1, "Thread-1", 1)
-thread2 = myThread(2, "Thread-2", 2)
+    # 解析响应
+    rs = jsonStr.text
+    print(rs)  # 输出响应的文本
 
-# 开启新线程
-thread1.start()
-thread2.start()
-thread1.join()
-thread2.join()
-print("退出主线程")
+    myClient = pymongo.MongoClient("mongodb://localhost:27017/")
+    myDB = myClient["showMoney"]
+    myCol = myDB["apiRequests"]
+
+    x = myCol.insert_one(jsonStr.json())
+
+    print(x)
+
+if __name__ == "__main__":
+    xmltojson()  # 调用转换函数

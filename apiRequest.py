@@ -10,7 +10,6 @@ import requests
 import pymongo
 # json 解析依赖包
 import json
-import demjson
 
 # 请求头部定制
 header = {
