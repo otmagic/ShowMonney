@@ -1,1 +1,17 @@
-{"lineColor": [0, 255, 0, 128], "imageData": "imageData", "fillColor": [255, 0, 0, 128], "shapes": [], "flags": {}}
+{
+  "lineColor": [
+    0,
+    255,
+    0,
+    128
+  ],
+  "imageData": "imageData",
+  "fillColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "shapes": [],
+  "flags": {}
+}
